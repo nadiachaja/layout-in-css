@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Layout 5</title>
-    <link rel="stylesheet" href="../style.css">
-    <style>
-      /* Doe hier jouw ding! */
-    </style>
-  </head>
-  <body id="basic-layout-5">
-    <header><h1>Basic Layout 5</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Layout 5</title>
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 2fr 2fr 2fr 2fr;
+      margin-left: 3em;
+    }
+
+    header {
+      grid-row: 1;
+      margin: 1em;
+      margin-left: 30em;
+    }
+
+    nav {
+      grid-row: 2;
+      margin: 1em;
+      margin-right: 30em;
+    }
+
+    main {
+      grid-row: 3;
+      margin: 1em;
+      margin-left: 30em;
+    }
+
+    footer {
+      grid-row: 4;
+      margin: 1em;
+      margin-left: 30em;
+    }
+  </style>
+
+
+</head>
+
+<body id="basic-layout-5">
+  <header>
+    <h1>Basic Layout 5</h1>
+  </header>
+  <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+  <main></main>
+  <footer></footer>
+</body>
+
 </html>
